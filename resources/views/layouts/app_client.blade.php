@@ -58,7 +58,19 @@
             <div class="modal-body">Cliquez sur "Déconnexion" pour fermer voter session.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Annuler</button>
-                <a class="btn btn-primary" href="login.html">Déconnexion</a>
+                
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+
+                        <a class="btn btn-primary" :href="route('logout')"
+                                onclick="event.preventDefault();
+                                            this.closest('form').submit();">
+                             Déconnexion
+                        </a>
+                    </form>
+                   
+                
+                
             </div>
         </div>
     </div>

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>YAEL INTERNATIONAL</title>
+    <title>Yael Consulting</title>
 
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href= {{asset('img/yael-icone.ico')}} />
